@@ -1,0 +1,28 @@
+******************************* 
+	Install Tailwind CSS
+*******************************
+
+	npm install tailwindcss @tailwindcss/postcss postcss --force
+	
+Configure PostCSS Plugins
+Create a .postcssrc.json file in the root of your project and add the @tailwindcss/postcss plugin to your PostCSS configuration.
+
+{
+  "plugins": {
+    "@tailwindcss/postcss": {}
+  }
+}
+
+styles.css
+	@import "tailwindcss";
+
+******************************************
+	Install daisyUI as a Tailwind plugin
+******************************************
+	npm i -D daisyui@latest
+
+En App.css
+	@import "tailwindcss";
+	@plugin "daisyui";
+
+
