@@ -1,3 +1,6 @@
+// Crea componentes
+	ng g c store-front/layout/storeFrontLayout --style css
+
 ******************************* 
 	Install Tailwind CSS
 *******************************
