@@ -21,8 +21,10 @@ styles.css
 ******************************************
 	npm i -D daisyui@latest
 
-En App.css
+En styles.css
 	@import "tailwindcss";
-	@plugin "daisyui";
+	@plugin "daisyui"{
+		themes: light --default, dark --prefersdark, cupcake;
+	}
 
 
