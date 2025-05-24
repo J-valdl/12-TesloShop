@@ -6,8 +6,8 @@ import {
   viewChild,
 } from '@angular/core';
 
-//import Swiper from 'swiper';
-//import { Navigation, Pagination } from 'swiper/modules';
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -35,28 +35,28 @@ export class ProductCarouselComponent implements AfterViewInit {
     const element = this.swiperDiv().nativeElement;
     if (!element) return;
 
-  //   const swiper = new Swiper(element, {
-  //     // Optional parameters
-  //     direction: 'horizontal',
-  //     loop: true,
+    const swiper = new Swiper(element, {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
 
-  //     modules: [Navigation, Pagination],
+      modules: [Navigation, Pagination],
 
-  //     // If we need pagination
-  //     pagination: {
-  //       el: '.swiper-pagination',
-  //     },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
 
-  //     // Navigation arrows
-  //     navigation: {
-  //       nextEl: '.swiper-button-next',
-  //       prevEl: '.swiper-button-prev',
-  //     },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 
-  //     // And if we need scrollbar
-  //     scrollbar: {
-  //       el: '.swiper-scrollbar',
-  //     },
-  //   });
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
    }
 }
